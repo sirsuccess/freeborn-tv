@@ -1,0 +1,16 @@
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-container img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-left {
+    width: 50%;
+    height: 80px;
+    background-color: #ffc107;
+}
