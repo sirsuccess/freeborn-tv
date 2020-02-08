@@ -8,7 +8,7 @@ export default function Routes() {
     <BrowserRouter basename={"/"}>
       <NavBar />
       <Switch>
-        <Route exact path="/home" component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
       </Switch>
       {/* <FooterOne /> */}
     </BrowserRouter>
