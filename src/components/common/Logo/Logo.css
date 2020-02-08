@@ -1,0 +1,41 @@
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-container img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-left {
+    width: 50%;
+    height: 80px;
+    background-color: #ffc107;
+}
+
+.social {
+    margin-top: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.social .fa {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
