@@ -19,7 +19,8 @@ import {
   Button
 } from "reactstrap";
 
-import Logo from "../../common/Logo";
+import Logo from "../../common/Logo/Logo";
+import "./Navbar.css";
 
 const Example = props => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +30,13 @@ const Example = props => {
   return (
     <div>
       <Logo />
-      <Navbar color="dark" className="text-success" light expand="md">
-        <NavbarToggler onClick={toggle} />
+      <Navbar
+        color="dark"
+        className="text-success position-sticky sticky-top navbar1"
+        light
+        expand="md"
+      >
+        <NavbarToggler onClick={toggle} className="bg-light" />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto text-success" navbar>
             <NavItem>
@@ -63,8 +69,9 @@ const Example = props => {
             <InputGroup>
               <Input placeholder="Search..." />
               <InputGroupAddon addonType="append" color="warning">
-                {/* <InputGroupText color="warning">@</InputGroupText> */}
-                <Button color="warning">@</Button>
+                <Button color="warning">
+                  <i class="fa fa-search"></i>
+                </Button>
               </InputGroupAddon>
             </InputGroup>
           </NavbarText>
